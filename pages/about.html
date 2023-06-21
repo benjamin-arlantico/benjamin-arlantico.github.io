@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bal Balba | About</title>
+        <link rel="icon" href="../img/icon2.png" type="image/icon type">
+        <link rel="stylesheet" href="../style/style.css">
+        <script src="menu.js" type="text/javascript"></script>
+    </head>
+
+    <body class="body" id="ab">
+
+        <section id="section_body1">
+            <script src="menu.js"></script>
+
+            <div id="homebody">
+                <div id="home-content">about.</div>
+            </div>
+                
+            <div class="about1">
+
+                <div class="about2">
+
+                    <div class="ss-container">
+                        <div class="aboutSlides fade">
+                            <div class="about3">
+                                Ang proyektong ito ay isinagawa bilang pang-huling requirement
+                                sa Wika 1. <br /> <br />
+                                
+                                Sa proyektong ito, binigyang pansin ang mga salitang 'slang' o
+                                balbal na nagsisilbing representasyon ng mga bagong salitang
+                                binubuo ng mga tagapagsalita ng wikang Filipino. Ang mga salitang
+                                ito ay binubuo para sa "convenience" ng mga karaniwang gumagamit ng
+                                wika, para sa kanilang mga karaniwang gawain. <br /> <br />
+
+                                And mga salitang balbal ay representasyon ng pagkamalikhain at 
+                                katalinuhan ng mga Pilipino. Higit pa rito, ang dahilan 
+                                ng paglitaw nito ay bunga ng iba't ibang pangyayari lalong 
+                                lalo na ang pag-unlad ng teknolohiya, at ang malaganap na 
+                                impluwensya ng mga media outlet sa ating lipunan. <br /><br />
+                            </div>
+                        </div>
+                        <div class="aboutSlides fade">
+                            <div class="about3">
+                                Tandaan natin na ang mga salitang ito ay hindi lamang 
+                                lumitaw nang basta-basta kaya't mahalagang masuri at 
+                                maintindihan ang mga nakapaloob na socio-cultural 
+                                circumstances dito. <br /> <br />
+
+                                Bilang representasyon ng mga bagong salitang lika 
+                                ng mga Pilipino, ang masusing pag-aaral sa mga 
+                                salitang balbal ay maaaring magbigay rin ng liwanag 
+                                ukol sa pagbabago ng wikang Filipino. <br /> <br />
+                            </div>
+                        </div>
+                        <div class="aboutSlides fade">
+                            <div class="about2">
+                                <div class="about3"id="abcon">
+                                    <span>Kilalanin ang mga manunulat</span>
+
+                                    <div class="about5">
+                                        <img src="../img/pic1.jpeg"/>
+                                        <div>
+                                            <p>Jehanne Eliza Criseno</p>
+                                            BS Computer Science
+                                        </div>
+                                    </div>
+
+                                    <div class="about5" id="aone">
+                                        <img src="../img/pic2.jpeg"/>
+                                        <div>
+                                            <p>Benjamin Ba&ntilde;aga</p>
+                                            BS Computer Science
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prevAb" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="nextAb" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>   
+        
+        <div id='spacing'><div>WIKA 1 G1 | BENJAMIN BA&Ntilde;AGA AND JEHANNE CRISENO</div></div>
+
+        <script>
+            var index = 0;
+            showSlides();
+            var slides;
+
+            function showSlides() {
+                var i;
+                slides = document.getElementsByClassName("aboutSlides");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                index++;
+                if (index> slides.length) {index = 1}    
+
+                slides[index-1].style.display = "block";  
+                setTimeout(showSlides, 3900); 
+            }
+
+            function plusSlides(position) {
+                index +=position;
+                if (index> slides.length) {index = 1}
+                else if(index<1){index = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slides[index-1].style.display = "block";  
+            }
+        </script>
+    </body>
+</html>
