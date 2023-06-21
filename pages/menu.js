@@ -3,7 +3,7 @@ document.write(`
 	<div class="hcenter_nav">
 		<img id="navlogo"src="../img/logo.png"/>   
 		<table>
-			<td id="nav2"><a href="../home.html">HOME</a></td>
+			<td id="nav2"><a href="../index.html">HOME</a></td>
 			<td id="nav2"><a href="puzzle.html">PUZZLE</a></td>
 			<td id="nav2"><a href="info.html#secP_homeBal">MGA BALBAL</a></td>
 			<td id="nav2"><a href="about.html">ABOUT</a></td>
